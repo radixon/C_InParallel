@@ -1,7 +1,6 @@
 # C_InParallel
-## An Introduction to Parallel Programming
-## Peter S. Pacheco
-
+## An Introduction to Parallel Programming ~ Peter S. Pacheco
+<br /> <br />
 
 ## Chapter 1 - WHY PARALLEL COMPUTING
 + SECTION 1.4 - How Do We Write Parallel Programs
