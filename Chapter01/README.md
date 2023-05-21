@@ -1,5 +1,4 @@
 # Chapter 1
-![hello](https://github.com/radixon/C_InParallel/assets/59415488/bc94d75e-7525-478d-87c4-5bd60962cb8c)
 
 ## Section 1.4
 
@@ -29,3 +28,5 @@ OpenMP is a relatively high-level extension to C that can "parallelize" with a s
 ## Section 1.6
 
 There isn't agreement on the distiction between the terms parallel, distributed, and concurrent.  One generalization is concurrent programs can have multiple tasks in progress at any instant.  Parallel and distributed programs usually have tasks that execute simultaneously.  In general, parallel programs tasks are more tightly coupled compared to distributed programs.
+
+![hello](https://github.com/radixon/C_InParallel/assets/59415488/bc94d75e-7525-478d-87c4-5bd60962cb8c)
