@@ -1,4 +1,6 @@
 # Chapter 1
+![hello](https://github.com/radixon/C_InParallel/assets/59415488/bc94d75e-7525-478d-87c4-5bd60962cb8c)
+
 ## Section 1.4
 
 Programs that are written for conventional, single-core systems cannont exploit the presence of multiple cores.  Writing parallel programs depend on the baic idea of partitioning the work to be done among the cores.  Two approaches to writing parallel programs: task-parallelism and data-parallelism.
