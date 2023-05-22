@@ -31,3 +31,14 @@ When a user runs a program, the OS creates a process.  A process is an instance 
 <br /><br />
 
 Most modern operating systems multitask, which provides support for the apparent simultaneous execution of multiple programs.  In a multitasking OS if a process needs to wait for a resource, the process will block.  A process that blocks, stops executing and the OS can run another process.  Threading provides a mechanism for programmers to divide programs into, more or less, independent tasks with the property that when one thread is blocked another thread can run.
+
+## Section 2.2
+<br />
+Caching is a method used to address the von Neumann bottleneck.  In general, a cache is a collection of memory locations that can be addressed in less time than other memory locations.  A CPU cache is a collection of memory locations that the CPU can access quicker than the CPU can access main memory.
+<br /><br />
+
+The principle that an access of one location is followed by an access of a nearby location is locality.  To exploit the principle of locality, the system uses an effectively wider interconnect to access data and instructions.  This means a memory access will effectively operate on blocks of data and instructions.  These blocks are cache blocks or cache lines.  A typical cache line stores 8 to 16 times as much information as a single memory location.
+<br /><br />
+
+When the CPU writes data to a cache, the value in the cache and the value in main memory are inconsistent.  In write-through caches, this inconsistency is addressed by the line being written to main memory when the line is written to the cache.  In write-back caches, the updated data in the cache is marked dirty, and the dirty line is written to memory when the cache line is replaced by a new cache line from memory.
+<br />
