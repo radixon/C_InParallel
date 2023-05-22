@@ -16,3 +16,4 @@ Instructions and data are transferred between the CPU and memory via the interco
 
 When data or instructions are transferred from memory to the CPU, the data or instructions are fetched or read from memory.  When data are transferred from the CPu to memory, the data are written to memory or stored.
 <br />
+![von Neumann](https://github.com/radixon/C_InParallel/assets/59415488/4ef1139c-d7b8-4385-8e1b-76dde4206980)
