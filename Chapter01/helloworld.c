@@ -12,19 +12,18 @@ void* printHello(void* threadId) {
 
 int main() {
     pthread_t threads[NUM_THREADS];
-    int rc;
-    size_t i;
+    int returnCode;
 
-    for (i = 0; t < NUM_THREADS; i++) {
-        rc = pthread_create(&threads[i], NULL, printHello, (void*)i);
-        if (rc) {
+    for (size_t i = 0; i < NUM_THREADS; i++) {
+        returnCode = pthread_create(&threads[i], NULL, printHello, (void*)i);
+        if (returnCode) {
             printf("ERROR: Return code from pthread_create() is %d\n", rc);
             return 1;
         }
     }
 
     // Wait for all threads to complete
-    for (i = 0; t < NUM_THREADS; i++) {
+    for (size_t i = 0; i < NUM_THREADS; i++) {
         pthread_join(threads[i], NULL);
     }
 
