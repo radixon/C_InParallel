@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <pthread.h>
 
+// AMD Ryzen 9 5900X 12-core, 24-thread Processor
 #define NUM_THREADS 24
 
 void* printHello(void* threadId) {
