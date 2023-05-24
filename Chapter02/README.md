@@ -40,5 +40,11 @@ Caching is a method used to address the von Neumann bottleneck.  In general, a c
 The principle that an access of one location is followed by an access of a nearby location is locality.  To exploit the principle of locality, the system uses an effectively wider interconnect to access data and instructions.  This means a memory access will effectively operate on blocks of data and instructions.  These blocks are cache blocks or cache lines.  A typical cache line stores 8 to 16 times as much information as a single memory location.
 <br /><br />
 
+When the CPU needs to access an instruction or data, the CPU works down the cache hierarchy.  If the information needed is not in any of the caches, the CPU accesses main memory.  A cache hit occurs when a cache is checked for information and the information is available.  A cache miss occurs when a cache is checked for information and the information is not available.
+<br /><br />
+
 When the CPU writes data to a cache, the value in the cache and the value in main memory are inconsistent.  In write-through caches, this inconsistency is addressed by the line being written to main memory when the line is written to the cache.  In write-back caches, the updated data in the cache is marked dirty, and the dirty line is written to memory when the cache line is replaced by a new cache line from memory.
-<br />
+<br /><br />
+
+Virtual memory was developed so main memory can function as a cache for secondary storage.  Virtual memory exploits the principle of spatial and temporal locality by keeping in main memory only the active parts of the many running programs.  Virtual memory operates on , pages, blocks of data and instructions.
+<br /><br />
