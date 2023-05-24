@@ -48,3 +48,14 @@ When the CPU writes data to a cache, the value in the cache and the value in mai
 
 Virtual memory was developed so main memory can function as a cache for secondary storage.  Virtual memory exploits the principle of spatial and temporal locality by keeping in main memory only the active parts of the many running programs.  Virtual memory operates on , pages, blocks of data and instructions.
 <br /><br />
+
+Instruction-level parallelism attempts to improve processor performance by having multiple processor components, functional units, simultaneously executing instructions.  There are two main approaches to instruction-level parallelism: pipelining and multiple issue.  Pipelining arranges functional units in stages.  Multiple issue simultaneously initiates multiple instructions.
+<br /><br />
+
+Thread-level parallelism attempts to provide parallelism through the simultaneous execution of different threads.  Thread-level parallelism provides a coarser-grained parallelsim than instruction-level parallelism.  Coarser refers to the program units being simultaneously executed, threads, being larger than the individual instructions of instruction-level parallelism.
+<br /><br />
+
+## Section 2.3
+
+A von Neumann system is a single instruction stream, single data stream, SISD, system in which a single instruction is executed at a time and one item of data can be fetched or stored at a time.  Parallel systems are single instruction, multiple data, SIMD, systems.  SIMD systems operate on multiple data streams by applying the same instruction to multiple data items.
+<br /><br />
